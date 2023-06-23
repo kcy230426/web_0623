@@ -1,1 +1,115 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+}
+body #hd {
+  transition: 0.3s;
+}
+body #hd h1 a {
+  display: block;
+  background-position: -181px -134px;
+}
+body #hd .out,
+body #hd h1 a {
+  background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2023/03/healthychart/img_v2/sp_common.png);
+  -webkit-background-size: 211px 193px;
+  background-size: 211px 193px;
+  width: 28px;
+  height: 28px;
+}
+body #hd .out {
+  background-position: -181px -68px;
+}
+body #hd #gnb li {
+  font-size: 14pt;
+  transition: 0.3s;
+}
+body #hd #gnb li.bolding {
+  font-weight: 400;
+  font-size: 16pt;
+}
+body #banner {
+  margin-top: 84px;
+  height: 450px;
+  background-color: #f4664e;
+  border-radius: 20px;
+}
+body #banner span {
+  font-size: 15pt;
+  border-radius: 50px;
+}
+body #banner h2 {
+  font-size: 34pt;
+}
+body #banner h2 em {
+  font-weight: 700;
+}
+body #banner p {
+  font-size: 13pt;
+}
+body #banner .date {
+  color: #ffe3dd;
+  margin-top: 60px;
+  margin-bottom: 35px;
+  font-size: 10pt;
+}
+body #keyword span {
+  font-size: 16pt;
+}
+body #keyword h1 {
+  position: relative;
+  font-size: 35pt;
+  font-weight: 700;
+}
+body #keyword .badge {
+  bottom: 50%;
+  left: 100%;
+  position: absolute;
+  background-color: rgb(255, 34, 34);
+  border-radius: 20px;
+  color: white;
+  font-size: 10pt;
+  padding: 6px 10px;
+  margin-bottom: auto;
+  margin-left: 5pt;
+}
+body #bar {
+  padding: 0;
+  background-color: rgb(216, 216, 216);
+  width: 340px;
+  height: 60px;
+  border-radius: 50px;
+}
+body #bar li {
+  margin: 0 2px;
+  background-color: #222;
+  border-radius: 50px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+body #bar li a {
+  color: white;
+  font-size: 11pt;
+}
+
+body.scroll #hd {
+  background-color: rgba(255, 255, 255, 0.514) !important;
+  backdrop-filter: blur(8px);
+}/*# sourceMappingURL=style.css.map */
