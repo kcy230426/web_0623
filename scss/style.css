@@ -45,10 +45,25 @@ body #hd #gnb li.bolding {
   font-size: 16pt;
 }
 body #banner {
+  position: relative;
+  overflow: hidden;
   margin-top: 84px;
   height: 450px;
   background-color: #f4664e;
   border-radius: 20px;
+}
+body #banner:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: calc(100% + 80px);
+  background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2023/03/healthychart/img_v2/bg_spot_scarlet.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
 }
 body #banner span {
   font-size: 15pt;
@@ -107,6 +122,144 @@ body #bar li {
 body #bar li a {
   color: white;
   font-size: 11pt;
+}
+body #sale {
+  background-color: #f2f2f2;
+}
+body #sale .container {
+  position: relative;
+}
+body #sale .container .brand {
+  position: absolute;
+  height: 150px;
+  left: 0;
+  top: 0;
+}
+body #sale .container .info {
+  color: #707070;
+  font-size: 11pt;
+}
+body #sale .container .titlebox {
+  background-color: black;
+  color: white;
+  font-size: 13pt;
+  border-radius: 50px;
+  padding: 8px 20px;
+}
+body #sale .container h2 {
+  text-align: center;
+  font-size: 35pt;
+}
+body #sale .container span.strong {
+  display: block;
+  background-color: #f4664e;
+  color: white;
+  font-size: 35pt;
+  padding: 0 8px;
+  padding-bottom: 2px;
+  font-weight: 700;
+}
+body #sale .container .saletxt {
+  font-size: 17pt;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+body #sale .container .sale-icon img {
+  height: 50px;
+}
+body #sale .container #salebox .coupon {
+  margin-right: 30px;
+  position: relative;
+}
+body #sale .container #salebox .coupon .left {
+  border-right: 1px rgb(243, 152, 152) solid;
+  background-color: #f4664e;
+  width: 180px;
+  padding: 12px 12px;
+}
+body #sale .container #salebox .coupon .left a {
+  color: white;
+}
+body #sale .container #salebox .coupon .left .coupon-name {
+  color: white;
+  font-size: 10pt;
+}
+body #sale .container #salebox .coupon .left h3 {
+  font-size: 24pt;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+body #sale .container #salebox .coupon .left .discount {
+  color: white;
+}
+body #sale .container #salebox .coupon .prise {
+  font-size: 9pt;
+  color: #707070;
+}
+body #sale .container #salebox .coupon .right {
+  padding-left: 15px;
+  background: #f4664e;
+  color: white;
+}
+body #sale .container #salebox .coupon .right p {
+  font-size: 9pt;
+  margin: 30px auto;
+  transform: rotate(-90deg);
+}
+body #sale .container #salebox .coupon .right:before {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  content: "";
+  background-color: #f2f2f2;
+  right: 0;
+  top: 25%;
+  transform: translateX(50%);
+}
+body #item-info {
+  background-color: #f4664e;
+}
+body #item-info .icon {
+  height: 45px;
+}
+body #item-info h3 {
+  font-size: 17pt;
+  font-weight: 400;
+  color: white;
+}
+body #item-info .item-left,
+body #item-info .item-right {
+  margin-right: 90px;
+}
+body #item-info .item-left .items,
+body #item-info .item-right .items {
+  height: 270px;
+}
+body #item-info .item-left p,
+body #item-info .item-right p {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 400;
+  color: white;
+}
+body #item-info .item-left p span,
+body #item-info .item-right p span {
+  font-size: 26pt;
+  color: white;
+  font-weight: 700;
+}
+body #item-info .item-left span,
+body #item-info .item-right span {
+  color: #ffb4a7;
+  font-size: 16pt;
+}
+body #item-info .txt {
+  color: #c3c3c3;
+}
+body #item-info .txt span {
+  color: #ffff99;
 }
 
 body.scroll #hd {

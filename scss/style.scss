@@ -61,6 +61,21 @@ body{
     }
     
     #banner{
+        position: relative;
+        overflow: hidden;
+        &:before{
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: calc(100% + 80px); // abs의 키가 더 커야된다.
+            background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2023/03/healthychart/img_v2/bg_spot_scarlet.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 100%;
+        }
         margin-top: 84px;
         height: 450px;
         background-color: #f4664e;
@@ -129,6 +144,149 @@ body{
             }
         }
 
+    }
+
+    #sale{
+        background-color: #f2f2f2;
+        .container{
+            position: relative;
+            .brand{
+                position: absolute;
+                height: 150px;
+                left: 0;
+                top: 0;
+            }
+            .info{
+                color: #707070;
+                font-size: 11pt;
+            }
+            .titlebox{
+                background-color: black;
+                color: white;
+                font-size: 13pt;
+                border-radius: 50px;
+                padding: 8px 20px;
+            }
+            h2{
+                text-align: center;
+                font-size: 35pt;
+            }
+            span.strong{
+                display: block;
+                background-color: #f4664e;
+                color: white;
+                font-size: 35pt;
+                padding: 0 8px;
+                padding-bottom: 2px;
+                font-weight: 700;
+            }
+            .saletxt{
+                font-size: 17pt;
+                font-weight: 400;
+                margin-bottom: 8px;
+            }
+            .sale-icon img{
+                height: 50px;
+            }
+            #salebox .coupon{
+                margin-right: 30px;
+                position: relative;
+                .left{
+                    border-right: 1px rgb(243, 152, 152) solid;
+                    background-color: #f4664e;
+                    width: 180px;
+                    padding: 12px 12px;
+                    a{
+                        color: white;
+                    }
+                    .coupon-name{
+                        color: white;
+                        font-size: 10pt;
+                    }
+                    h3{
+                        font-size: 24pt;
+                        font-weight: 700;
+                        margin: 0;
+                        color: white;
+                        
+                    }
+                    .discount{
+                        color: white;
+                    }
+                }
+                .prise{
+                    font-size: 9pt;
+                    color: #707070;
+                }
+                .right{
+                    padding-left: 15px;
+                    background:#f4664e;
+                    color: white;
+                    p{
+                        font-size: 9pt;
+                        margin: 30px auto;
+                        transform: rotate(-90deg);
+                    }
+                    &:before{
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50px;
+                        content: "";
+                        background-color: #f2f2f2;
+                        right: 0;
+                        top: 25%;
+                        transform: translateX(50%)
+                        
+                    }
+                }
+            }
+        }
+        
+        
+        
+        
+
+    }
+    #item-info{
+        background-color: #f4664e;
+        .icon{
+            height: 45px;
+        }
+        h3{
+            font-size: 17pt;
+            font-weight: 400;
+            color: white;
+        }
+        .item-left,
+        .item-right{
+            margin-right: 90px;
+            .items{
+                height: 270px;
+            }
+            p{
+                display: inline-block;
+                margin-right: 10px;
+                font-weight: 400;
+                color: white;
+                span{
+                    font-size: 26pt;
+                    color: white;
+                    font-weight: 700;
+                }
+            }
+            span{
+                color: #ffb4a7;
+                font-size: 16pt;
+            }
+        }
+        .txt{
+            color: #c3c3c3;
+            span{
+                color: #ffff99;
+            }
+        }
+        
     }
 }
 
